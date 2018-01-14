@@ -12,4 +12,4 @@ the scripts are present in sql scripts folder attached to the project
 
 -Update lines 35 and 36 in WEB-INF/servlet.xml to match your sql server connection.
 
--To test your connection to the database you can add TestDbServlet.java in testJdbc package.
+-To test your connection to the database you can run TestDbServlet.java in testJdbc package.
