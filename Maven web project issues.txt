@@ -1,0 +1,27 @@
+
+
+1- create a java folder in src/main and put your java files in it.
+
+*********not finding the dispatcher servlet
+
+
+1- I was facing the same Issue. When I saw into maven repository .m2 folder
+(....m2\repository\org\springframework\spring-webmvc) in my local I found two 3.2.0.RELEASE folders. 
+SO I removed one. Then I went to project, right click->properties->deployment essembly-> add maven dependencies. 
+clean build and then restart the server. Then the DispatcherServlet got loaded.
+ 
+	
+
+2- You need to add the "Maven Dependency" in the Deployment Assembly
+
+    right click on your project and choose properties.
+    click on Deployment Assembly.
+    click add
+    click on "Java Build Path Entries"
+    select Maven Dependencies"
+    click Finish.
+
+Rebuild and deploy again
+
+- 
+	

@@ -1,0 +1,1 @@
+<% response.sendRedirect("task-manager/home"); %>

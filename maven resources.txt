@@ -1,0 +1,25 @@
+
+
+www.luv2code.com/mavenreferencemanual
+
+www.luv2code.com/mavenebooks
+
+www.luv2code.com/mavencheatsheet
+
+
+//////// finding dependency coordinates////////
+
+1-maven central repository:
+
+searcg.maven.org
+
+2- mvnrepository.com
+
+//////////////////////////////////////////
+
+update pom.xml to use java 8
+
+<properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.target>1.8</maven.compiler.target>  // add this line
+  </properties>

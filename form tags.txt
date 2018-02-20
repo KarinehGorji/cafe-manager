@@ -1,0 +1,76 @@
+
+types of form tags
+
+1- text feilds
+
+
+ <form:form action="/processform" modelAttribute="student">
+
+
+	first name: <form:input path="name" />
+
+	
+	last name: <form:input path="lastname" />
+
+	
+	***drop dpwn list here
+
+
+ </form:form>
+
+
+
+ when form is loaded spring mvc will call student.getName() and student.getLastName()
+
+
+2- drop dpwn list
+
+
+	Country:
+
+	<form:select path="country">
+
+		<form:option value="brazil" label="BRA"/>
+		<form:option value="Armenia" label="ARM"/>	
+		...
+
+	
+	</form:select>
+
+
+3- Rasio buttons
+
+	C++ <form:radionbutton path="favoriteLanguage" value="C++" />
+	Java <form:radiobutton path=favoriteLanguage" value="Java" />
+	...
+
+ on submit spring will call student.setFavoriteLanguage()
+
+ on needing to select only one option
+
+4- Check box
+
+	<form:checkbox path="operatingsystem" value="windows"/>
+	<form:checkbox path="pertaingsystem" value="mac"/>
+	...
+
+ when needing to select multiple options.
+
+	
+
+
+https://github.com/KarinehGorji/cafe-manager.git
+
+
+
+
+
+
+
+
+
+
+
+
+
+
